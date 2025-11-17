@@ -1,2 +1,7 @@
 .venv
 /.venv
+
+# Model artifacts
+models/*.pkl
+models/*.joblib
+models
