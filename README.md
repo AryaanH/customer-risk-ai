@@ -1,0 +1,1 @@
+To run the API or scoring, first run the training notebook or train_model.py to generate models/final_risk_model.pkl
