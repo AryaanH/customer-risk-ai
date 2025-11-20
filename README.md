@@ -1,25 +1,21 @@
 # Customer Risk Scoring & Early Warning AI System
 
-A full end-to-end machine learning system that predicts **loan default risk** and exposes it through a production grade **FastAPI service**, **Docker container**, **Azure cloud deployment**, and **dashboard-ready outputs**—similar to what consulting teams deliver to financial services clients.
+A full end-to-end machine learning system that predicts customer default risk for financial services.
 
-🔗 **Live API Docs:** https://aryaan-risk-api.azurewebsites.net/docs  
-🔗 **Score Endpoint:** POST `/score`
+This project includes:
+- Complete ML pipeline (EDA → feature engineering → model selection → PyTorch baseline)
+- Production-ready FastAPI microservice running on Azure Web App for Containers
+- Dockerized deployment with Linux/amd64 image
+- Inference API exposed via /score endpoint
+- Interactive Power BI dashboard (3 pages)
+
+**Live API** https://aryaan-risk-api.azurewebsites.net/docs  
 
 ---
 
 ## 1. Problem Overview
 
 Financial institutions need to identify customers who are likely to default so they can intervene early, reduce losses, and meet regulatory requirements.
-
-This project implements a complete **risk scoring system**:
-
-- Cleans and transforms raw customer/loan data  
-- Trains multiple machine learning models  
-- Selects the best model (based on ROC-AUC)  
-- Deploys the model as an API using FastAPI  
-- Packages everything in Docker  
-- Deploys to Azure Web App for Containers  
-- Generates portfolio level scored data for dashboards  
 
 ---
 
